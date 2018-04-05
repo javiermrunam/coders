@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<LINK REL=StyleSheet HREF="eswcome.css" TYPE="text/css" MEDIA=screen>
-	<meta charset="UTF-8">
-	<title>Pagina de bienvenida</title>
+  <meta charset="utf-8">
+	<title>Bienvenido</title>
 </head>
-
+<!--etiqueta link siver para poder utilizar un recurso externo en este caso sera css
+-->
+<link rel="stylesheet"  href="estilo.css">
 <body>
-<?php
-$var1="quienes somos?";
-echo "<br>$var1";
- ?>
-	<h1><center>Aprende a Programar</center></h1>
-	<center>
 
-	<input class="quienes" onclick="location='/hola.php'" type="submit" name="boton2" 	value="<?php echo "$var1"; ?>">
-	<input type="submit" name="boton2" 	value="">
-	<input type="submit" name="boton3" 	value="">
-	</center>
+<form action="pagina que valida" method="post" class="formulario">
+	<!--ENCABEZADO MAS GRANDE -->
+	<h1 class="formulario_titulo">iniciar sesion</h1>
 
-	</body>
+
+	<input type="text" name="txtUsuario" id="usuario"  class="formulario_input">
+	<label for="usuario" class="formulario_label">Usuario</label>
+
+	<input type="password" name="txtPassword" id="password"  class="formulario_input">
+	<label for="password" class="formulario_label">Password</label>
+
+	<input type="submit"  value="enviar" name="btn1" class="formulario_submit">
+
+</form>
+<script src=formu.js type="text/javascript"></script>
+
+</body>
 </html>
